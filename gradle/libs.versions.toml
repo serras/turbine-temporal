@@ -1,6 +1,6 @@
 [versions]
 kotlin = "1.9.10"
-coroutines = "1.7.1"
+coroutines = "1.7.3"
 turbine = "1.0.0"
 kotest = "5.7.1"
 dokka = "1.9.0"
