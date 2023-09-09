@@ -12,6 +12,7 @@ sealed interface Msg
 data class InMsg(val value: Int): Msg
 data class OutMsg(val value: Pair<Int, Int>): Msg
 
+@Suppress("UNUSED")
 class InAndOutTest: StringSpec({
   val inFlow = flowOf(1, 2, 3, 4)
 

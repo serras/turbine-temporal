@@ -9,6 +9,7 @@ import io.kotest.assertions.shouldFail
 import io.kotest.core.spec.style.StringSpec
 import kotlinx.coroutines.flow.flowOf
 
+@Suppress("UNUSED")
 class SimpleTest: StringSpec({
   suspend fun simpleTest(block: () -> Formula<Int>) {
     flowOf(1, 2, 3).test {
