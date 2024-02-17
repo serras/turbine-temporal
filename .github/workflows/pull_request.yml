@@ -42,7 +42,7 @@ jobs:
           arguments: --full-stacktrace check
 
       - name: Upload reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 'reports-${{ matrix.os }}'
           path: '**/build/reports/**'
