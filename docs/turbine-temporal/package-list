@@ -2,7 +2,7 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:fp.serrano.turbine.temporal.formula////PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/index.html
 $dokka.location:fp.serrano.turbine.temporal.formula//always/#kotlin.Function0[fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/always.html
-$dokka.location:fp.serrano.turbine.temporal.formula//and/#kotlin.Array[fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/and.html
+$dokka.location:fp.serrano.turbine.temporal.formula//and/#fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/and.html
 $dokka.location:fp.serrano.turbine.temporal.formula//and/#kotlin.collections.List[fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/and.html
 $dokka.location:fp.serrano.turbine.temporal.formula//atomicProgress/fp.serrano.turbine.temporal.formula.Atomic[TypeParam(bounds=[kotlin.Any?])]#kotlin.Result[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/atomic-progress.html
 $dokka.location:fp.serrano.turbine.temporal.formula//done/fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/done.html
@@ -12,7 +12,7 @@ $dokka.location:fp.serrano.turbine.temporal.formula//implies/#fp.serrano.turbine
 $dokka.location:fp.serrano.turbine.temporal.formula//next/#kotlin.Function0[fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/next.html
 $dokka.location:fp.serrano.turbine.temporal.formula//next/#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/next.html
 $dokka.location:fp.serrano.turbine.temporal.formula//not/#fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/not.html
-$dokka.location:fp.serrano.turbine.temporal.formula//or/#kotlin.Array[fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/or.html
+$dokka.location:fp.serrano.turbine.temporal.formula//or/#fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/or.html
 $dokka.location:fp.serrano.turbine.temporal.formula//or/#kotlin.collections.List[fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/or.html
 $dokka.location:fp.serrano.turbine.temporal.formula//progress/fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]#kotlin.Result[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/progress.html
 $dokka.location:fp.serrano.turbine.temporal.formula//throws/#kotlin.String#kotlin.Function1[TypeParam(bounds=[kotlin.Throwable]),kotlin.Boolean]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/throws.html
@@ -24,7 +24,7 @@ $dokka.location:fp.serrano.turbine.temporal.formula/Formula///PointingToDeclarat
 $dokka.location:fp.serrano.turbine.temporal.formula/Formula/not/#/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-formula/not.html
 $dokka.location:fp.serrano.turbine.temporal.formula/Formula/pretty/#/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-formula/pretty.html
 $dokka.location:fp.serrano.turbine.temporal.formula/Step///PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-step/index.html
-$dokka.location:fp.serrano.turbine.temporal.formula/Step/Step/#kotlin.collections.List[kotlin.String]?#fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-step/-step.html
+$dokka.location:fp.serrano.turbine.temporal.formula/Step/Step/#kotlin.collections.List[fp.serrano.turbine.temporal.formula.Problem]?#fp.serrano.turbine.temporal.formula.Formula[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-step/-step.html
 $dokka.location:fp.serrano.turbine.temporal.formula/Step/next/#/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-step/next.html
 $dokka.location:fp.serrano.turbine.temporal.formula/Step/result/#/PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-step/result.html
 $dokka.location:fp.serrano.turbine.temporal.formula/TRUE///PointingToDeclaration/turbine-temporal/fp.serrano.turbine.temporal.formula/-t-r-u-e/index.html
@@ -37,4 +37,3 @@ $dokka.location:fp.serrano.turbine.temporal//testFormula/kotlinx.coroutines.flow
 fp.serrano.turbine.temporal
 fp.serrano.turbine.temporal.formula
 fp.serrano.turbine.temporal.patterns
-

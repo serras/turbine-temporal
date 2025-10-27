@@ -5,43 +5,48 @@ import fp.serrano.turbine.temporal.formula.Formula
 import fp.serrano.turbine.temporal.formula.always
 import fp.serrano.turbine.temporal.formula.eventually
 import fp.serrano.turbine.temporal.formula.holds
-import io.kotest.assertions.shouldFail
-import io.kotest.core.spec.style.StringSpec
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.test.runTest
+import kotlin.test.Test
+import kotlin.test.assertFails
 
 @Suppress("UNUSED")
-class SimpleTest: StringSpec({
+class SimpleTest {
   suspend fun simpleTest(block: () -> Formula<Int>) {
     flowOf(1, 2, 3).test {
       formula(block)
     }
   }
 
-  "always holds" {
+  @Test
+  fun `always holds`() = runTest {
     simpleTest {
       always { holds("> 0") { it > 0 } }
     }
   }
 
-  "always doesn't hold" {
-    shouldFail {
+  @Test
+  fun `always doesn't hold`() = runTest {
+    assertFails {
       simpleTest {
         always { holds("< 2") { it < 2 } }
       }
     }
   }
 
-  "eventually holds" {
+  @Test
+  fun `eventually holds`() = runTest {
     simpleTest {
       eventually { holds("> 1") { it > 1 } }
     }
   }
 
-  "eventually doesn't hold" {
-    shouldFail {
+  @Test
+  fun `eventually doesn't hold`() = runTest {
+    assertFails {
       simpleTest {
         eventually { holds("> 10") { it > 10 } }
       }
     }
   }
-})
+}

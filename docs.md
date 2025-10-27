@@ -8,8 +8,7 @@ For example, this is a test that specifies that for every element emitted in `in
 message emitted in `outFlow` such that the result in the second is the argument plus 1.
 
 ```kotlin
-@Test
-suspend fun testCorrect() {
+@Test fun testCorrect() = runTest {
   merge(inFlow.map(::InMsg), outFlow.map(::OutMsg)).testFormula {
     inputOutput { i: InMsg, o: OutMsg ->
       o.value.arg == i.value && o.value.result == i.value + 1
@@ -33,13 +32,12 @@ That formula contains the three different ways in which we can talk about time:
 
 In particular, `next + eventually` specifies that something must be true, beginning from the next element in the
 sequence. In our case, we want that every time an input message is received, a corresponding output message is 
-eventually received, that is, received in some later point in time.
+eventually received, that is, received at some later point in time.
 
 The formula can be translated almost verbatim to Kotlin using the formula builders provided by the library.
 
 ```kotlin
-@Test
-suspend fun testCorrect() {
+@Test fun testCorrect() = runTest {
   merge(inFlow.map(::InMsg), outFlow.map(::OutMsg)).testFormula {
     always {
       implies(
