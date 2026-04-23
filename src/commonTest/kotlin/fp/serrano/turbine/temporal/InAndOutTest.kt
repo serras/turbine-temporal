@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.merge
 import kotlinx.coroutines.test.runTest
 import kotlin.test.Test
 import kotlin.test.assertFails
+import kotlin.time.Duration.Companion.milliseconds
 
 sealed interface Msg
 data class InMsg(val value: Int): Msg
@@ -17,12 +18,12 @@ class InAndOutTest {
   val inFlow = flowOf(1, 2, 3, 4)
 
   val correctOutFlow = inFlow.map {
-    delay(500)  // this represents work
+    delay(500.milliseconds)  // this represents work
     it to it + 1
   }
 
   val wrongOutFlow = inFlow.map {
-    delay(500)  // this represents work
+    delay(500.milliseconds)  // this represents work
     it to (if (it == 2) 5 else it + 1)
   }
 
