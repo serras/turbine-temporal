@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.3.21"
-coroutines = "1.10.2"
+coroutines = "1.11.0"
 turbine = "1.2.1"
 dokka = "2.2.0"
 
